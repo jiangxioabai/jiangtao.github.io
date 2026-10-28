@@ -54,10 +54,7 @@ window.profile = {
   ],
   "contacts": [
     {
-      "label": {
-        "zh": "邮箱",
-        "en": "Email"
-      },
+      "label": "jiangt@ios.ac.cn",
       "url": "mailto:jiangt@ios.ac.cn"
     },
     {
