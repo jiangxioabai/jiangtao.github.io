@@ -19,8 +19,7 @@
     document.querySelectorAll('[data-zh]').forEach(n=>n.textContent=n.dataset[lang]);
     const language=document.querySelector('.language');language.textContent=lang==='zh'?'EN ↗':'中文 ↗';language.setAttribute('aria-label',lang==='zh'?'Switch to English':'切换到中文');
     document.querySelector('nav').setAttribute('aria-label',lang==='zh'?'主导航':'Main navigation');
-    for(const[id,key]of[['affiliation','affiliation'],['introduction','introduction']])document.getElementById(id).textContent=t(p[key]);
-    const details=document.querySelector('#about-details');details.replaceChildren();p.details.forEach(d=>{const item=el('span','detail','');item.append(el('span','detail-label',t(d.label)),el('span','',t(d.value)));details.append(item);});
+    document.getElementById('introduction').textContent=t(p.introduction);
     const research=document.querySelector('#research-list');research.replaceChildren();p.research.forEach((r,i)=>{const item=el('article','research-item','');item.append(el('span','research-no','0'+(i+1)),el('h3','',t(r.title)),el('p','',t(r.description)));research.append(item);});
     const contacts=document.querySelector('#contact-list');contacts.replaceChildren();p.contacts.forEach(c=>{const active=/^(https?:\/\/|mailto:|assets\/)/i.test(c.url);const item=el(active?'a':'span','contact-item','');if(active)item.href=c.url;item.append(el('span','',typeof c.label==='string'?c.label:t(c.label)),el('small','',active?'↗':(lang==='zh'?'待添加':'To be added')));contacts.append(item);});
     function resource(label,url,cls=''){const a=el('a',cls,label+' ↗');a.href=url;a.target='_blank';a.rel='noreferrer';return a;}

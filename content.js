@@ -1,35 +1,9 @@
 // Profile supplied by Tao Jiang; publication links and OpenAI citation verified 2026-10-28.
 window.profile = {
-  "affiliation": {
-    "zh": "中国科学院软件研究所 · 计算机科学国家重点实验室 · 博士在读",
-    "en": "Ph.D. student · State Key Laboratory of Computer Science, ISCAS"
-  },
   "introduction": {
-    "zh": "此前的工作主要包括 PPSZ 算法分析、WalkSAT 与 DPLL 的理论分离，以及整数二次规划的局部搜索。",
-    "en": "My earlier work includes the analysis of PPSZ, a separation between WalkSAT and DPLL, and local search for integer quadratic programming."
+    "zh": "我在四川大学数学学院获得本科学历，目前在中国科学院软件研究所计算机科学国家重点实验室攻读博士学位。",
+    "en": "I received my bachelor’s degree from the School of Mathematics at Sichuan University. I am currently pursuing a Ph.D. at the State Key Laboratory of Computer Science, Institute of Software, Chinese Academy of Sciences."
   },
-  "details": [
-    {
-      "label": {
-        "zh": "博士",
-        "en": "Ph.D."
-      },
-      "value": {
-        "zh": "中国科学院软件研究所 · 2021.09–2027.06（预计）",
-        "en": "ISCAS · Sep 2021–Jun 2027 (expected)"
-      }
-    },
-    {
-      "label": {
-        "zh": "本科",
-        "en": "Bachelor’s"
-      },
-      "value": {
-        "zh": "四川大学 · 数学与应用数学 · 2017.09–2021.06",
-        "en": "Sichuan University · Mathematics & Applied Mathematics · Sep 2017–Jun 2021"
-      }
-    }
-  ],
   "research": [
     {
       "title": {
