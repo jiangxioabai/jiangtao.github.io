@@ -1,4 +1,4 @@
-/* Art is the backdrop. The separate portrait slot is reserved for a real photo. */
+
 body[data-theme] .hero{display:flex;align-items:center;min-height:510px;margin:0 -54px;padding:45px 54px 65px;isolation:isolate;gap:0}
 body[data-theme] .hero-copy{width:53%;max-width:440px;position:relative;z-index:3}
 body[data-theme] .hero .artwork{position:absolute;inset:0;width:auto;max-width:none;margin:0;padding:0;z-index:0}
@@ -7,23 +7,12 @@ body[data-theme] .hero .art-frame{position:absolute;inset:0;width:100%;height:10
 body[data-theme] .hero .art-frame img{display:block;width:100%;height:100%;object-fit:cover;object-position:70% 60%}
 body[data-theme] .hero .art-frame:after{content:'';position:absolute;inset:0;pointer-events:none}
 body[data-theme] .hero .artwork figcaption{position:absolute;left:auto;right:24px;bottom:19px;max-width:none;margin:0;z-index:1;font-size:8px;gap:10px}
-body[data-theme] .hero-index{left:54px;bottom:20px;z-index:4}
 .photo-slot{position:absolute;right:54px;top:105px;z-index:3;width:130px;height:166px;border:1px dashed currentColor;display:flex;align-items:center;justify-content:center;flex-direction:column;background:rgba(245,242,233,.88);color:#657065;border-radius:2px;box-shadow:0 8px 32px #1623180a;font-size:10px;line-height:1.8}
 .photo-slot svg{height:69px;width:65px;stroke:currentColor;stroke-width:1;fill:none;opacity:.55;margin-bottom:10px}.photo-slot small{font-size:8px;opacity:.8}
-body[data-theme=ink] .hero .art-frame img{object-position:center 61%;opacity:.75}
-body[data-theme=ink] .hero .art-frame:after{background:linear-gradient(90deg,#f5f2e9 0%,rgba(245,242,233,.97) 28%,rgba(245,242,233,.35) 80%),linear-gradient(0deg,#f5f2e9,transparent 40%)}
-body[data-theme=ink] .hero .artwork figcaption{color:#5b6052}
 body[data-theme=lilies] .hero .art-frame img{object-position:60% 47%}
 body[data-theme=lilies] .hero .art-frame:after{background:linear-gradient(90deg,rgba(241,244,244,.99),rgba(241,244,244,.94) 28%,rgba(241,244,244,.24) 75%),linear-gradient(0deg,#f1f4f4,transparent 40%)}
 body[data-theme=lilies] .photo-slot{background:rgba(241,244,244,.86);color:#536c80;border-radius:7px}
 body[data-theme=lilies] .hero .artwork figcaption{color:#354e60}
-body[data-theme=moon] .hero .art-frame img{object-position:60% 55%}
-body[data-theme=moon] .hero .art-frame:after{background:linear-gradient(90deg,rgba(17,30,43,.98),rgba(17,30,43,.91) 30%,rgba(17,30,43,.12) 80%),linear-gradient(0deg,#111e2b,transparent 35%)}
-body[data-theme=moon] .photo-slot{background:rgba(17,30,43,.72);color:#d2c6ad}
-body[data-theme=enigma] .hero .art-frame img{object-position:65% 25%}
-body[data-theme=enigma] .hero .art-frame:after{background:linear-gradient(90deg,#eee8d9,rgba(238,232,217,.95) 28%,rgba(238,232,217,.06) 80%),linear-gradient(0deg,#eee8d9,transparent 30%)}
-body[data-theme=enigma] .photo-slot{background:rgba(238,232,217,.86);color:#203d36;box-shadow:6px 6px 0 #b99c5d55;border-radius:0}
-body[data-theme=enigma] .hero .artwork figcaption{color:#253a32;background:#eee8d9d9;padding:1px 5px}
-@media(max-width:900px){body[data-theme] .hero{margin:0 -35px;padding-left:35px;padding-right:35px}body[data-theme] .hero-index{left:35px}.photo-slot{right:35px;width:118px;height:155px}}
-@media(max-width:650px){body[data-theme] .hero{margin:0 -24px;padding:34px 24px 65px;min-height:510px}body[data-theme] .hero-copy{width:100%;max-width:none;padding-top:0}body[data-theme] h1{max-width:calc(100% - 105px)}body[data-theme] .name-en,body[data-theme=enigma] .name-en{font-size:29px}body[data-theme] .name-zh,body[data-theme=enigma] .name-zh{font-size:43px}.photo-slot{right:24px;top:80px;width:85px;height:112px;font-size:9px}.photo-slot svg{height:43px;width:42px;margin-bottom:4px}.photo-slot small{font-size:7px}body[data-theme] .hero .intro{max-width:100%;font-size:13px}body[data-theme] .hero .artwork figcaption{left:24px;right:24px;bottom:18px;justify-content:flex-end}body[data-theme=ink] .hero .art-frame:after{background:linear-gradient(90deg,#f5f2e9e8,#f5f2e9a6),linear-gradient(0deg,#f5f2e9,transparent)}body[data-theme=lilies] .hero .art-frame:after{background:linear-gradient(90deg,#f1f4f4ed,#f1f4f4b0),linear-gradient(0deg,#f1f4f4,transparent)}body[data-theme=moon] .hero .art-frame:after{background:linear-gradient(90deg,#111e2bf2,#111e2b94),linear-gradient(0deg,#111e2b,transparent)}body[data-theme=enigma] .hero .art-frame:after{background:linear-gradient(90deg,#eee8d9ed,#eee8d9a8),linear-gradient(0deg,#eee8d9,transparent)}}
+@media(max-width:900px){body[data-theme] .hero{margin:0 -35px;padding-left:35px;padding-right:35px}.photo-slot{right:35px;width:118px;height:155px}}
+@media(max-width:650px){body[data-theme] .hero{margin:0 -24px;padding:34px 24px 65px;min-height:510px}body[data-theme] .hero-copy{width:100%;max-width:none;padding-top:0}body[data-theme] h1{max-width:calc(100% - 105px)}body[data-theme] .name-en{font-size:29px}body[data-theme] .name-zh{font-size:43px}.photo-slot{right:24px;top:80px;width:85px;height:112px;font-size:9px}.photo-slot svg{height:43px;width:42px;margin-bottom:4px}.photo-slot small{font-size:7px}body[data-theme] .hero .intro{max-width:100%;font-size:13px}body[data-theme] .hero .artwork figcaption{left:24px;right:24px;bottom:18px;justify-content:flex-end}body[data-theme=lilies] .hero .art-frame:after{background:linear-gradient(90deg,#f1f4f4ed,#f1f4f4b0),linear-gradient(0deg,#f1f4f4,transparent)}}
 
