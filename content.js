@@ -149,30 +149,7 @@ window.profile = {
       "links": []
     }
   ],
-  "manuscripts": [
-    {
-      "title": "Theory and Scalable Algorithms for Overlapping Clustering Objectives",
-      "authors": {
-        "zh": "Tao Jiang（第一作者）",
-        "en": "Tao Jiang (first author)"
-      },
-      "venue": {
-        "zh": "AAAI 2027 · 在投",
-        "en": "AAAI 2027 · Under review"
-      }
-    },
-    {
-      "title": "Exact Softmax Attention Has the Rectangular Matrix-Multiplication Exponent in Extended Arithmetic Circuits",
-      "authors": {
-        "zh": "Tao Jiang, Minbo Gao",
-        "en": "Tao Jiang, Minbo Gao"
-      },
-      "venue": {
-        "zh": "ICLR 2027 · 在投",
-        "en": "ICLR 2027 · Under review"
-      }
-    }
-  ],
+  "manuscripts": [],
   "projects": [
     {
       "title": {
