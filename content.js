@@ -130,7 +130,7 @@ window.profile = {
     },
     {
       "title": "Polynomial-Time Singular Witnesses for Non-SNS Sign Patterns",
-      "authors": "Tao Jiang, Minbo Gao, Shaowei Cai",
+      "authors": "Tao Jiang, Minbo Gao",
       "year": "",
       "venue": {
         "zh": "IJTCS–FAW",
@@ -140,7 +140,7 @@ window.profile = {
     },
     {
       "title": "Expected Runtime Bounds for WalkSAT and GSAT on Tseitin CNFs",
-      "authors": "Tao Jiang, Shiteng Chen, Ziqun Li, Shaowei Cai",
+      "authors": "Tao Jiang, Shiteng Chen, Ziqun Li",
       "year": "",
       "venue": {
         "zh": "IJTCS–FAW",
