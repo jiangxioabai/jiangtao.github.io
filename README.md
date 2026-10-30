@@ -18,13 +18,13 @@
 
 本地预览：python -m http.server 8765
 
-## 访客统计
+## 访问次数统计
 
-右上角显示累计访客估算，使用 Busuanzi 服务 https://bsz.saop.cc/api。
+右上角显示累计页面访问次数（PV），使用 Busuanzi 服务 https://bsz.saop.cc/api。
 
 - 统计从 2026-10-30 开始，不能补算之前的访问。
 - 中英文及 URL 参数共用规范地址 https://jiangxioabai.github.io/jiangtao.github.io/。
 - 正式页面每次加载只上报一次；语言切换不会再次上报。
 - 本地预览只读取数据，不增加计数。
-- 访客数是服务端去重估算，可能受浏览器、网络和拦截设置影响。
+- 每次打开或刷新页面增加一次访问，不对访客去重；读取 page_pv。
 - 服务不可用时显示破折号，不生成本地假数字。

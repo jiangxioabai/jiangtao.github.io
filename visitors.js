@@ -9,14 +9,14 @@
   function describe() {
     const en = document.documentElement.lang === 'en';
     const note = en
-      ? 'Cumulative visitor estimate since 2026-10-30. Deduplication depends on browsers and networks. Counter service: bsz.saop.cc.'
-      : '自 2026-10-30 起累计的访客估算。去重结果受浏览器、网络等因素影响。统计服务：bsz.saop.cc。';
+      ? 'Total page views since 2026-10-30. Each page load or refresh counts once; changing language does not add a view. Counter service: bsz.saop.cc.'
+      : '自 2026-10-30 起累计的访问次数。每次打开或刷新页面计一次，切换语言不重复计数。统计服务：bsz.saop.cc。';
     counter.title = state === 'error'
-      ? (en ? 'Visitor statistics are temporarily unavailable.' : '访客统计暂时不可用。')
+      ? (en ? 'Page-view statistics are temporarily unavailable.' : '访问统计暂时不可用。')
       : note;
     counter.setAttribute('aria-label', count === undefined
-      ? (en ? 'Visitor estimate: unavailable' : '访客估算：暂无数据')
-      : (en ? `Estimated visitors: ${count}` : `累计访客估算：${count}`));
+      ? (en ? 'Page views: unavailable' : '访问次数：暂无数据')
+      : (en ? `Total page views: ${count}` : `累计访问次数：${count}`));
   }
   describe();
   new MutationObserver(describe).observe(document.documentElement, {
@@ -39,9 +39,9 @@
       return response.json();
     })
     .then(result => {
-      const value = result?.data?.site_uv;
+      const value = result?.data?.page_pv;
       if (!result.success || !Number.isSafeInteger(value) || value < 0) {
-        throw new Error('Invalid visitor count');
+        throw new Error('Invalid page-view count');
       }
       count = value;
       state = 'ready';
