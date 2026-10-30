@@ -33,9 +33,9 @@
       if(paper.featured){const citation=el('div','citation-note','');citation.append(resource(lang==='zh'?'被 OpenAI 引用':'Cited by OpenAI','https://github.com/openai/math/blob/main/preprints/The-Exponential-Time-Hypothesis-is-False-October-25-2026/paper.pdf','citation-badge'),el('p','',lang==='zh'?'《The Exponential Time Hypothesis is False》（2026），第 3 页相关工作；参考文献 [JC26] 见第 66 页。':'The Exponential Time Hypothesis is False (2026): related work on p. 3; reference [JC26] on p. 66.'));citation.append(resource(lang==='zh'?'查看引用原文（第 3 页）':'Read the citation (p. 3)','https://raw.githubusercontent.com/openai/math/main/preprints/The-Exponential-Time-Hypothesis-is-False-October-25-2026/paper.pdf#page=3'));body.append(citation);}
       row.append(el('span','paper-year',paper.year),body);papers.append(row);
     });
-    const projects=document.querySelector('#project-list');projects.replaceChildren();p.projects.forEach(project=>{const row=el('article','project-item','');row.append(el('span','project-status',t(project.status)),el('h3','',t(project.title)),el('p','body-copy',t(project.description)));if(project.url)row.append(resource(lang==='zh'?'代码与数据':'Code & data',project.url,'project-resource'));projects.append(row);});
+    const projects=document.querySelector('#project-list');projects.replaceChildren();p.projects.forEach(project=>{const row=el('article','project-item','');row.append(el('h3','',t(project.title)),el('p','body-copy',t(project.description)));if(project.url)row.append(resource(lang==='zh'?'代码与数据':'Code & data',project.url,'project-resource'));projects.append(row);});
     const art=document.querySelector('#art-image');
-    art.alt=lang==='zh'?'克劳德·莫奈 · 睡莲':'Claude Monet · Water Lilies';
+    art.alt=lang==='zh'?'莫奈《睡莲》（1906）':'Claude Monet, Water Lilies (1906)';
     document.querySelector('#art-caption').textContent=art.alt;
     document.querySelector('#year').textContent=new Date().getFullYear();
     const nextUrl=new URL(location.href);nextUrl.searchParams.delete('theme');nextUrl.searchParams.delete('embed');nextUrl.searchParams.set('lang',lang);history.replaceState(null,'',nextUrl);

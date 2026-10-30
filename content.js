@@ -1,8 +1,8 @@
 // Profile supplied by Tao Jiang; publication links and OpenAI citation verified 2026-10-28.
 window.profile = {
   "introduction": {
-    "zh": "我在四川大学数学学院获得本科学历，目前在中国科学院软件研究所计算机科学国家重点实验室攻读博士学位。",
-    "en": "I received my bachelor’s degree from the School of Mathematics at Sichuan University. I am currently pursuing a Ph.D. at the State Key Laboratory of Computer Science, Institute of Software, Chinese Academy of Sciences."
+    "zh": "我本科毕业于四川大学数学学院，现为中国科学院软件研究所计算机科学国家重点实验室博士生。",
+    "en": "I received my bachelor’s degree from the School of Mathematics at Sichuan University and am now a Ph.D. student at the State Key Laboratory of Computer Science, Institute of Software, Chinese Academy of Sciences."
   },
   "research": [
     {
@@ -11,8 +11,8 @@ window.profile = {
         "en": "SAT and combinatorial optimization"
       },
       "description": {
-        "zh": "研究 SAT 算法的运行时间、局部搜索及其与完备搜索的差异，也做整数二次规划等组合优化问题。",
-        "en": "Running-time analysis of SAT algorithms, local search and its differences from complete search, and combinatorial optimization problems such as integer quadratic programming."
+        "zh": "主要研究 SAT 算法的运行时间，也做整数二次规划的局部搜索。",
+        "en": "I study the running time of SAT algorithms and local-search methods for integer quadratic programming."
       }
     },
     {
@@ -21,8 +21,8 @@ window.profile = {
         "en": "Agent recursive self-improvement (RSI)"
       },
       "description": {
-        "zh": "目前在华为诺亚方舟实验室做 Agent RSI。相关工作包括大模型 SAT 推理评测和 Lean 4 证明优化。",
-        "en": "Currently working on agent RSI at Huawei Noah’s Ark Lab. Related projects include SAT reasoning evaluation for LLMs and Lean 4 proof optimization."
+        "zh": "目前研究 Agent 的递归自我改进，也关注大模型推理评测与形式化证明。",
+        "en": "My current work is on recursive self-improvement in agents. I also work on LLM reasoning evaluation and formal proofs."
       }
     }
   ],
@@ -77,8 +77,8 @@ window.profile = {
       "authors": "Tao Jiang, Shaowei Cai",
       "year": "2026",
       "venue": {
-        "zh": "ICLR 2026 研讨会 · 口头报告 · 杰出论文奖",
-        "en": "ICLR 2026 Workshop · Oral · Outstanding Paper Award"
+        "zh": "ICLR 2026 研讨会，口头报告，获杰出论文奖",
+        "en": "ICLR 2026 Workshop, oral presentation, Outstanding Paper Award"
       },
       "description": {
         "zh": "比较大模型在子句数相近、证明难度不同的 SAT 实例上的表现。",
@@ -156,13 +156,9 @@ window.profile = {
         "zh": "大模型驱动的 Lean 4 证明优化",
         "en": "LLM-guided Lean 4 proof optimization"
       },
-      "status": {
-        "zh": "在研",
-        "en": "In progress"
-      },
       "description": {
-        "zh": "用大模型改写 Lean 4 证明，并通过编译验证正确性，比较证明长度、验证时间和跨版本兼容性。",
-        "en": "Using LLMs to rewrite Lean 4 proofs, checking correctness by compilation, and comparing proof length, verification time, and compatibility across Lean versions."
+        "zh": "正在尝试用大模型缩短 Lean 4 证明。重写后的证明需通过 Lean 检查，并记录验证耗时。",
+        "en": "I am using LLMs to shorten Lean 4 proofs. Rewritten proofs are checked by Lean, with verification time recorded."
       }
     },
     {
@@ -170,13 +166,9 @@ window.profile = {
         "zh": "LLM SAT 推理评测与难度分析",
         "en": "LLM SAT reasoning benchmarks"
       },
-      "status": {
-        "zh": "研究项目",
-        "en": "Research project"
-      },
       "description": {
-        "zh": "构造难度可控的 SAT 实例，评测 GPT、Claude、Qwen、DeepSeek 等模型，分析证明难度与回答准确率的关系。",
-        "en": "Constructed SAT instances with controlled difficulty to evaluate GPT, Claude, Qwen, and DeepSeek, and studied the relationship between proof difficulty and answer accuracy."
+        "zh": "构造难度可控的 SAT 实例，用它们测试大模型。重点分析证明难度能否解释模型的错误。",
+        "en": "I construct SAT instances with controlled difficulty to test language models, focusing on whether proof difficulty helps explain their errors."
       }
     },
     {
@@ -184,13 +176,9 @@ window.profile = {
         "zh": "LS-IQCQP：整数二次规划局部搜索",
         "en": "LS-IQCQP: local search for IQP"
       },
-      "status": {
-        "zh": "合作研究",
-        "en": "Collaborative research"
-      },
       "description": {
-        "zh": "参与可行性修复算子的设计、推导和实现。代码与实验数据已公开。",
-        "en": "Contributed to the design, derivation, and implementation of the feasibility-repair operator. Code and experimental data are available."
+        "zh": "参与设计并实现整数二次规划的可行性修复算子。代码与实验数据已公开。",
+        "en": "I contributed to the design and implementation of the feasibility-repair operator for integer quadratic programming. Code and experimental data are available."
       },
       "url": "https://github.com/INFORMSJoC/2025.1178"
     }
